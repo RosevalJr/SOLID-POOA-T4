@@ -7,20 +7,17 @@
 ---
 
 # Introdução
-Os softwares, em sua maioria, são utilizados por muitos anos dado a sua natureza evolutiva. Sendoa média de tempo de vida de software de 10 a 15 anos (TAMAI; TORIMITSU, 1992). Neste contexto,grande parte dos recursos desprendidos para o desenvolvimento do software são direcionados para asatividades que mantêm o código funcional, e atual para seus clientes
 
-Os software, em sua maioria, 
+A arquiteturação de projetos de software em larga escala é uma atividade complexa, que exige planejamento e coordenação entre o grupo de desenvolvedores a fim de evitar recursos desprendidos desnecessariamente durante a manutenção destes artefatos de código. Segundo Sommerville (2011), em média, cerca de dois terços dos recursos investidos em um projeto de software são direcioadas às atividades de manutenção deste software. Neste contexto, é natural que sejam estudadas e desenvolvidas técnicas e convenções de design de software para evitar o desprendimento desnecessarios de recursos na manutenção. Diante disso, Robert C. Martin (Uncle Bob), em seu artigo "The Principles of OOD", propos 5 principios de design de programas orientados a objetos. Michael Feathers observou estes 5 principios de design de software orientados e objeto e agrupo-os em um acrônimo, origiandno então o famoso acrônimo SOLID.
 
-A arquiteturação de projetos de software em larga escala é uma atividade complexa, que exisge planejamento e coordenação entre o grupo de desenvolvedores a fim de evitar recursos desprendidos desnecessariamente durante a manuntenção destes artefatos de código. Segundo Sommerville (2011), em média, cerca de dois terços dos recursos investidos em um projeto de software são direcioadas às atividades de manutenção deste software. Neste contexto, é natural que sejam estudadas e desenvolvidas técnicas e convenções de desenvolvimento de software para evitar o desprendimento desnecessarios no seu ciclo de vida. Diante desta demanda crescente, Robert C. Martin (a.k.a. Uncle Bob), em seu artigo "The Principles of OOD", propos 5 principios para o desenvolvimento de programar com baixo acoplamento e alta coesão a fim de disponibilizar uma manutenbilidade e extensão faceis. Então, Michael Feathers observou estes 5 principios de design de software orientados e objeto e agrupoos em um acrônimo, origiandno então o famoso acrônimo SOLID.
+De maneira geral, cada um desses princípios de desifn de software orientado a objetos tem como principal objetivo gerar alto coesão e baixo acoplamento entre artefatos de código do software, facilitando a manuntenção e extensão do projeto. Dessa forma, por meio dos paradigmas disponibilizados pela orientação a objetos, com a aplicação destes principios é possivel produzir um software com funcionalidades focalizadas, padronizado, extensivel, facilmente testavel, robusto e sem duplicação de código. Portanto, esses devem ser levados em consideração durante o desenvolvimento de softwares orientados a objetos, funcionando como um guia para produzir softwares com boa manutenbilidade.
 
-De maneira geral, cada um desses principios de design de software orientado a objetos tem como principal objetivo facilitar a manutenção e desenvolvimento de softwares, diminuindo a quantidade de erros gerados por novas adesões e remoções no código. Isso é alcançado através de varios questões do software em si, entre elas: (falar aqui cada um dos objetos da aplicação do acronimo SOLID)
-
-Dessa forma, foi então proposto o acronimo SOLID. Neste acronimo são representados 5 princiíos de design de software orientado a objetos para cada uma de suas letras.
-- S (Single Responsability Principle);
-- O (Open/Closed Principle);
-- L (Substituition Liskov Principle);
-- I (Interface substituion Principle);
-- D (Dependency Inversion Principle);
+Neste acronimo são representados 5 princiíos de design de software orientado a objetos para cada uma de suas letras.
+- **S** Single Responsiblity Principle (SRP)
+- **O** Open-Closed Principle (OCP)
+- **L** Liskov Substitution Principle (LSP)
+- **I** Interface Segregation Principle (ISP)
+- **D** Dependency Inversion Principle (DIP)
 
 Neste artigo será feito a definição de cada um dos principios SOLID, aplicando todos eles em um exemplo prático que também será apresentado neste artigo.
 
@@ -38,3 +35,6 @@ O que é o principio SOLID?
 Quem criou e para o que ele foi criado?
 Sua importancia atualmente?
 Introduzir que será explicado cada uma das letras do acrônimo SOLID.
+
+https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
+https://www.eduardopires.net.br/2013/04/orientacao-a-objeto-solid/
