@@ -38,3 +38,4 @@ Introduzir que será explicado cada uma das letras do acrônimo SOLID.
 
 https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
 https://www.eduardopires.net.br/2013/04/orientacao-a-objeto-solid/
+https://www.treinaweb.com.br/blog/introducao-aos-principios-solid
