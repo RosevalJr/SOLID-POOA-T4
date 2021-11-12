@@ -7,3 +7,8 @@
 ---
 
 # Introdução
+
+O que é o principio SOLID? 
+Quem criou e para o que ele foi criado?
+Sua importancia atualmente?
+Introduzir que será explicado cada uma das letras do acrônimo SOLID.
