@@ -19,11 +19,11 @@ A arquiteturação de projetos de software em larga escala é uma atividade comp
 Neste artigo será feito a definição de cada um dos princípios SOLID, e em seguida, discussão sobre sobre a relação entre os conceitos de inversão de controle, inversão de dependências e injeção de dependência. Por fim, será feita a apresentação de um projeto de software que aplica todos os conceitos definidos neste artigo. 
 
 
-# S
-# O
-# L
-# I
-# D
+# Single Responsability Principle [S]
+# Open-Closed Principle [O]
+# Liskov Substitution Principle [L]
+# Interface Segregation Principle [I]
+# Dependency Inversion Principle [D]
 
 O que é o principio SOLID? 
 Quem criou e para o que ele foi criado?
