@@ -26,13 +26,23 @@ Neste artigo será feito a definição de cada um dos princípios SOLID, e em se
 
 # Single Responsability Principle [S]
 
-> "Uma classe deve ter apenas um motivo para mudar" [4]
+> "Uma classe deve ter apenas um motivo para mudar." [4]
 
 O SRP dita que todo módulo de código deva possuir apenas uma responsabilidade com relação às funcionalidades de um projeto de software, e sendo assim, apresentar apenas um vetor de mudança. Caso todo módulo de código de um projeto de software apresente apenas uma responsabilidade, o projeto como um todo apresentará baixo acoplamento e alta coesão, dado que as funcionalidades do programa estarão altamente focalizadas em cada módulo. Portanto, os sistemas que adotam a utilização deste princípio possuem alta manutenabilidade. Esse comportamento é apresentando devido a baixa dependência entre os diversos módulos de código e focalização de cada módulo de código. Por exemplo, durante a fase de testes deste projeto de software, ao encontrar um defeito, os desenvolvedores terão fortes indícios de qual módulo de software deverá ser trabalhado para consertar tal defeito. Além disso, esse módulos podem ser reutilizados, apresentando baixas chances de encadeamento de erros, sendo que o código é organizado em módulos robustos e bem definidos. 
 
 Para aplicar este princípio, é indicado que seja pensado no todo de uma aplicação, respondendo a seguinte pergunta: "Dentro do time de desenvolvimento, quem seria responsável por este módulo de código?". Caso a resposta desta pergunta resulte em mais de um grupo de pessoas, há fortes indícios que este módulo de código apresenta mais de uma responsabilidade, e deve ser refatorado para respeitar o SRP. Embora a aplicação deste princípio possa parecer simples, ela requer alto entendimento do contexto da aplicação e experiência em programação. Por exemplo, um programador pouco experiente, ou que está a pouco tempo em contato com um projeto, pode não visualizar completamente o escopo de uma aplicação. Isso pode levar a identificação de apenas uma única responsabilidade, onde na verdade para alguém experiente que já conhece a muito tempo o produto, tenha múltiplas responsabilidades. Essa quebra do SRP gerará classes com múltiplas responsabilidades com alto acoplamento e baixa coesão, dificultando a manutenção do sistema como um todo.
 
 # Open-Closed Principle [O]
+
+> "As entidades de software (classes, módulos, funções etc.) devem ser abertas para
+ampliação, mas fechadas para modificação." [4] 
+
+O desenvolvimento de software é ciclico é pode perdurar por diversas iterações. Dessa forma, é espero que os projetos de software se adaptem as novas necessidades de seus usuários, dados sua natureza evolutiva.
+Projetos de software possume natureza evolutiva, dado que as nececessidadedado que seu desenvolvimento é feito dentro de um ciclo vida. Dessa forma, é esperado que os software sofram ampliação de suas funcionalidades para se adequar as necessidades de clientes. Entretanto, a aplicação dessas extensões em softwares "fracos", implica na modificação de código ja implementado, e muito provavelmente, isso resultará em comportamentos não esperados pelo software resultanto, apresentando defeitos que dificultarão a manuntenção do software e sua extensão.
+
+A efetuação de novas extensões para uma aplicação, gerando multiplas modificações em código da implementando, muito provavelmente, apresetará defeitos inesperados que podem dificultar a manuntenção do software e sua extensão.
+
+Falar que não é recomendado sair aplicando esse principio a torto e direito, pois isso causa o design especulativo, que seria praticamente implementar algo esperando que outra coisa aconteça sem mesmo saber se ira acontecer ou não, desprendendo recursos de maneira desnecessaria. Sendo assim, deve ser feita a aplicação deste princípio dado um comportamento previamente observado, ou uma extensão especificada pelo documento de requisitos do sistema projetado.
 
 # Liskov Substitution Principle [L]
 
