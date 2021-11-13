@@ -8,28 +8,23 @@
 
 # Introdução
 
-A arquiteturação de projetos de software em larga escala é uma atividade complexa, que exige planejamento e coordenação entre o grupo de desenvolvedores a fim de evitar recursos desprendidos desnecessariamente durante a manutenção destes artefatos de código. Segundo Sommerville (2011), em média, cerca de dois terços dos recursos investidos em um projeto de software são direcioadas às atividades de manutenção deste software. Neste contexto, é natural que sejam estudadas e desenvolvidas técnicas e convenções de design de software para aprimorar a manutenbilidade e extensibilidade destes softwares. Diante disso, Robert C. Martin (Uncle Bob), em seu artigo "The Principles of OOD", propos 5 principios de design de programas orientados a objetos. Michael Feathers observou estes 5 principios de design de software orientados e objeto e agrupo-os em um acrônimo, origiandno então o famoso acrônimo SOLID.
+A arquiteturação de projetos de software em larga escala é uma atividade complexa, que exige planejamento e coordenação entre o grupo de desenvolvedores a fim de evitar recursos desprendidos desnecessariamente durante a manutenção destes artefatos de código. Segundo Sommerville (2011), em média, cerca de dois terços dos recursos investidos em um projeto de software são direcionados às atividades de manutenção deste software. Neste contexto, é natural que sejam estudadas e desenvolvidas técnicas e convenções para aprimorar a manutenibilidade e extensibilidade destes softwares. Diante disso, Robert C. Martin (Uncle Bob), em seu artigo "The Principles of OOD", propôs 5 princípios de design de programas orientados a objetos. Michael Feathers observou estes 5 princípios de design de software orientados a objetos e os agrupou em um acrônimo, originando então o famoso acrônimo SOLID. Cada um desses princípios de design de software utilizam os paradigmas de orientação a objetos para a produção de artefatos de código robusto, extensível e de fácil manutenção. Dessa forma, artefatos de código produzidos com este padrão apresentam baixo acoplamento entre as classes presentes, funcionalidades focalizadas, facilmente testáveis e robustas.
 
-De maneira geral, cada um desses princípios de desifn de software orientado a objetos tem como principal objetivo funcionar como um guia aos desenvolvedores para gerar alto coesão e baixo acoplamento entre artefatos de código do software, facilitando a manuntenção e extensão do projeto. Dessa forma, por meio dos paradigmas disponibilizados pela orientação a objetos, com a aplicação destes principios é possivel produzir um software com funcionalidades focalizadas, padronizado, extensivel, facilmente testavel, robusto e sem duplicação de código. Portanto, esses devem ser levados em consideração durante o desenvolvimento de softwares orientados a objetos, funcionando como um guia para produzir softwares com boa manutenbilidade.
-
-Neste acronimo são representados 5 princípios de design de software orientado a objetos para cada uma de suas letras.
-- **S** Single Responsiblity Principle (SRP)
+Neste acrônimo são representados 5 princípios de design de software orientado a objetos para cada uma de suas letras.
+- **S** Single Responsibility Principle (SRP)
 - **O** Open-Closed Principle (OCP)
 - **L** Liskov Substitution Principle (LSP)
 - **I** Interface Segregation Principle (ISP)
 - **D** Dependency Inversion Principle (DIP)
 
-Neste artigo será feito a definição de cada um dos principios SOLID, aplicando todos eles em um exemplo prático que também será apresentado neste artigo.
+Neste artigo será feito a definição de cada um dos princípios SOLID, e em seguida, a apresentação de um projeto de software que aplica todos os conceitos definidos neste artigo.
+
 
 # S
 # O
 # L
 # I
 # D
-
-
-A construção de projetos de software para 
-A arquteturação de projetos de software em larga escala demanda muita mão de obra para sua manutenção. Diante disso, é natural que sejam pesquisados técnicas e principios para auxiliar na produção de código que seja de facil manutenção e extensão. Diante dessa demanada, Uncle Bob idealizou 5 princípios a serem seguidos na programação orientada a objetos para gerar código de facil manutenção e extensão. Adjutamente, michale agrupou esses 5 princípios em um acronimo batizando de SOLID, que engloba os 5 principios propostos por Uncle Bob. Esses princiíos são de extrema importancia na vida de um programador, pois eles ajudam a programação seja feita de maneira facilitada para o trabalho em equipe o que é essencial no desenvolvimento de projetos de código de larga escala. Além de evitar, o desencademaneot de erros durante a manutenção desses software o que demanda grande parte dos recursos. Neste artigo será feita a apresentação breve de cada um dos conceitos dos princiípios SOLID, além de exemplificar a sua utilização em um projeto funconal de código.
 
 O que é o principio SOLID? 
 Quem criou e para o que ele foi criado?
