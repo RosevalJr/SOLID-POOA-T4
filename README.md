@@ -39,6 +39,10 @@ Para aplicar este princípio, é indicado que seja pensado no todo de uma aplica
 
 # Dependency Inversion Principle [D]
 
+# Padrões de Projeto de Software
+
+- Falar dos padrões que o exemplo produzido seguem.
+
 O que é o principio SOLID? 
 Quem criou e para o que ele foi criado?
 Sua importancia atualmente?
