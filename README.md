@@ -16,7 +16,7 @@ A arquiteturação de projetos de software em larga escala é uma atividade comp
 - **I** -- Interface Segregation Principle (ISP)
 - **D** -- Dependency Inversion Principle (DIP)
 
-Neste artigo será feito a definição de cada um dos princípios SOLID, e em seguida, a apresentação de um projeto de software que aplica todos os conceitos definidos neste artigo.
+Neste artigo será feito a definição de cada um dos princípios SOLID, e em seguida, a apresentação de um projeto de software que aplica todos os conceitos definidos. Por fim, será feita uma breve discussão sobre sobre a relação entre os conceitos de inversão de controle, inversão de dependências e injeção de dependência.
 
 
 # S
