@@ -20,6 +20,10 @@ Neste artigo será feito a definição de cada um dos princípios SOLID, e em se
 
 
 # Single Responsability Principle [S]
+> O que é ? (Definição)
+> Para atingir ele é preciso fazer o que?
+> A sua aplicação resulta no que?
+
 # Open-Closed Principle [O]
 # Liskov Substitution Principle [L]
 # Interface Segregation Principle [I]
