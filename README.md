@@ -45,6 +45,12 @@ Embora esse princípio possa resolver muitos dos problemas ligados à manutenç�
 
 # Liskov Substitution Principle [L]
 
+> "Os subtipos devem ser substituíveis pelos seus tipos de base." [4]
+
+A herança é um dos principais mecanismos da programação orientada a objetos. Sendo que, sua aplicação possibilita que classes compartilhem seus atributos e métodos para outras classes, sendo esquematizado um relacionamento hierarquico para essa relação. Nesta relação, há a classe base que concede os métodos e atributos para outra classe deriva. Isso possibilita a utilização de outro mecanismo importante na orientação a objetos, o polimorfismo. Sendo o principal que possibilita que duas ou mais classes derivadas de uma classe base podem chamar um método com mesma assinatura, porém possibilitando comportamentos diferentes. Neste contexto, foi idealizado o principio de LSP a fim de evitar a adesão de código desnecessario em um projeto, ou a comportamentos inesperados em tempo de execução de um projeto. Esse principio diz que toda classe derivada deve poder ser subsitituida pela sua classe base. Essencialmente, este comportamento implica em uma relação mais intrinseca que o famoso "É-um", sendo que muitas vezes essa relação pode levar a heranças erradas, sendo que a classe derivada possui individualidades suficientes para não ser mais um tipo da classe base. Sendo que o correta utilização deste termo deve ser o substituivel, sendo que uma classe derivada ser substituivel pela sua base cobre o principio.
+
+Importante destacar que, o princípio de LSP é um dos principais possibilitadores de aplicação do principio OCP. Sendo que, quando uma classe derivada é substituivel por sua classe base, não será necessário a modificação de código ja implementado para adequar-se a individualidades dos subtipos, dado uma possivel quebra do principio de LSP. Dessa forama, a aplicação deste princiípio possibilita que o projeto seja extensivel, sem a aplicação de modificações em código ja implementado, mostrando-se extremamente importante para o respeito do principio de OCP e assim a manutenbilidade de um projeto.
+
 # Interface Segregation Principle [I]
 
 # Dependency Inversion Principle [D]
