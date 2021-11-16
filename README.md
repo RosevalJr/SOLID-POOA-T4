@@ -61,6 +61,7 @@ Em muitos casos, é tentador produzir interfaces grandes que englobam múltiplas
 
 >" A. Módulos de alto nível não devem depender de módulos de baixo nível. Ambos
 devem depender de abstrações." [4]
+
 >" B. As abstrações não devem depender de detalhes. Os detalhes devem depender
 das abstrações." [4]
 
