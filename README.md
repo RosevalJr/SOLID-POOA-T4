@@ -18,12 +18,6 @@ A arquiteturação de projetos de software em larga escala é uma atividade comp
 
 Neste artigo será feito a definição de cada um dos princípios SOLID, e em seguida, discussão sobre sobre a relação entre os conceitos de inversão de controle, inversão de dependências e injeção de dependência. Por fim, será feita a apresentação de um projeto de software que aplica todos os conceitos definidos neste artigo. 
 
-((Fazer um item especifico para design de projeto e discutir este tema lá ...))
-> O que é ? (Definição) X
-> Para atingir ele é preciso fazer o que? X
-> A sua aplicação resulta no que? X
-> Falar qual abstração de OO é usada... X
-
 # Single Responsability Principle [S]
 
 > "Uma classe deve ter apenas um motivo para mudar." [4]
