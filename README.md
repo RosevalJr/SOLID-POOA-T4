@@ -55,9 +55,14 @@ Importante destacar que, o princípio de LSP é um dos principais possibilitador
 
 > "Os clientes não devem ser obrigados a depender de métodos que não utilizam." [4]
 
-Em muitos casos, é tentador produzir interfaces grandes que englobam múltiplas funcionalidades, sendo responsabilidade das classes derivadas, implementar devidamente os métodos que serão utilizados. Entretanto, isso é uma má prática de programação, sendo que outros desenvolvedores podem não ter conhecimento que nem todos os métodos de uma classe estão implementados corretamente. Esses desenvolvedores podem utilizar esses métodos falhos, ocasionando erros de execução que podem demorar para serem corrigidos em sua manutenção. A fim de evitar esses tipos de defeitos no desenvolvimento de softwares orientados a objetos, foi proposto o ISP. Esse princípio diz que classes clientes não devem depender de métodos que não utilizam. Sendo assim, uma classe que herda uma classe interface, deve implementar apenas aquilo que irá utilizar. Caso haja métodos que não serão utilizados na interface pela classe, a interface deve ser segregada em múltiplas interfaces, para que as classes derivadas sejam obrigadas a implementar apenas aquilo que irão utilizar. Com isso, não há a possibilidade dos clientes utilizarem métodos que não foram devidamente implementados. Também, o código resultante estará melhor modularizado, facilitando a manutenção.
+Em muitos casos, é tentador produzir interfaces grandes que englobam múltiplas funcionalidades, sendo responsabilidade das classes derivadas, implementar devidamente os métodos que serão utilizados. Entretanto, isso é uma má prática de programação, sendo que outros desenvolvedores podem não ter conhecimento que nem todos os métodos de uma classe estão implementados corretamente. Esses desenvolvedores podem utilizar esses métodos falhos, ocasionando erros de execução que podem demorar para serem corrigidos em sua manutenção. A fim de evitar esses tipos de defeitos no desenvolvimento de softwares orientados a objetos, foi proposto o ISP. Esse princípio diz que classes clientes não devem depender de métodos que não utilizam. Sendo assim, uma classe que herda de uma classe interface, deve implementar apenas aquilo que irá utilizar. Caso haja métodos que não serão utilizados na interface pela classe, a interface deve ser segregada em múltiplas interfaces, para que as classes derivadas sejam obrigadas a implementar apenas aquilo que irão utilizar. Com isso, não há a possibilidade dos clientes utilizarem métodos que não foram devidamente implementados. Também, o código resultante estará melhor modularizado, facilitando a manutenção.
 
 # Dependency Inversion Principle [D]
+
+>" A. Módulos de alto nível não devem depender de módulos de baixo nível. Ambos
+devem depender de abstrações.
+B. As abstrações não devem depender de detalhes. Os detalhes devem depender
+das abstrações." [4]
 
 # Padrões de Projeto de Software
 
