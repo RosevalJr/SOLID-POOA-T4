@@ -73,6 +73,9 @@ suas classes base.".
 
 - Falar dos padrões que o exemplo produzido seguem.
 
+Naturalmente, muitas pessoas confundem os termos inversão de dependência, inversão de controle e injeção
+de dependência, dado suas correlações de temas e aplicações. Entretanto, esses termos referem-se a padrões e tecnicas diferentes para atingir certos objetos. 
+
 O que é o principio SOLID? 
 Quem criou e para o que ele foi criado?
 Sua importancia atualmente?
@@ -82,3 +85,10 @@ https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-p
 https://www.eduardopires.net.br/2013/04/orientacao-a-objeto-solid/
 https://www.treinaweb.com.br/blog/introducao-aos-principios-solid
 Robert Martin, Micah Martin, Princípios, Padrões e Práticas Ágeis em C#,  Bookman Editora, 2009
+
+Martin Fowler. Inversion of Control. martinfowler.com, 2005.
+https://martinfowler.com/bliki/InversionOfControl.html
+
+Martin Fowler. Inversion of Control Containers and the Dependency Injection pattern.
+martinfowler.com, 2004.
+https://martinfowler.com/articles/injection.html
