@@ -53,6 +53,8 @@ Importante destacar que, o princípio de LSP é um dos principais possibilitador
 
 # Interface Segregation Principle [I]
 
+> "Os clientes não devem ser obrigados a depender de métodos que não utilizam." [4]
+
 # Dependency Inversion Principle [D]
 
 # Padrões de Projeto de Software
