@@ -55,6 +55,8 @@ Importante destacar que, o princípio de LSP é um dos principais possibilitador
 
 > "Os clientes não devem ser obrigados a depender de métodos que não utilizam." [4]
 
+Em muitos casos é tentador fazer interfaces grandes que englobam multiplas funcionalidades, que as classes que herdam dessas interfaces podem herdar e implementar apenas aquilo que irão utilizar. Entretanto, isso é uma má pratica de programação, sendo que muitas vezes, outros desenvolvedores podem não ter conhecimento que algum método da classe não está funcionando corretamente. Eles podem utilizar esses métodos e então ocasionar erros que podem demorar para serem corrigidos, dificultando a manutenção do código. Dessa forma, foi proposta a ISP. Esse princípio diz que classes clientes não devem depender de métodos que não utiliza, sendo assim, uma classe que herda de uma classe interface deve implementar apenas aquilo que irá utilizar. Dessa forma, caso hajam métodos que não serão utilizados na interface pela classe, a interface deve ser segregada em duas classe, para que a classes que implemetam esses implementem apenas aquilo que irão utilizar. Com isso, não há a posisbilidade dos clientes utilizarem métodos que não foram devidamente implementando, o código ficara melhor modularizado também facilitando a manutenção.
+
 # Dependency Inversion Principle [D]
 
 # Padrões de Projeto de Software
