@@ -65,14 +65,16 @@ devem depender de abstrações." [4]
 >" B. As abstrações não devem depender de detalhes. Os detalhes devem depender
 das abstrações." [4]
 
-Normalmente, em métodos procedurais ocorre o comportamento de produzir artefatos de software, que contém módulos de alto nivel que dependem de baixo nivel. Entretanto, isso mostra-se um tanto quanto problematico, tendo em vista que, os módulos de alto nivel são aquelas que carregam as regras de negócio de um sistema. A fim de produzir código com baixo acoplamento, e assim robusto, é desejavel que esses módulos de código sejam independentes aos módulos de código de baixo nivel, pois assim eles podem ser reutilizados em outras partes do código também. Diante disso, foi criado o principio de DIP. Esse princípio "inverte" esse comportamento recorrente de métodos procedurais, dessa forma, os módulos de alto e baixo nivel devem depender apenas de abstrações, e as abstrações não devem depender de datalhes, os detalhes devem depender das abstrações. Isso de maneira resumida pode ser levado a heurística de que "depender de abstrações". Neste heuristica é definido as seguintes métricas segundo [4].
+Normalmente, em métodos procedurais é observado o comportamento de produção de artefatos de software, que contém módulos de alto nível que dependem de módulos de baixo nível. Entretanto, isso mostra-se problemático, visto que os módulos de alto nível são aqueles que carregam as regras de negócio de um sistema. A fim de produzir código com baixo acoplamento, e assim robusto, é desejável que esses módulos de código sejam independentes aos módulos de código de baixo nível. Dessa forma, esses módulos de alto nível podem ser reutilizados em outras partes do código também. Diante disso, foi criado o princípio de DIP, que "inverte" esse comportamento recorrente de métodos procedurais. Este princípio reza que os módulos de alto e baixo nível devem depender apenas de abstrações, e as abstrações não devem depender de detalhes, os detalhes devem depender das abstrações. A aplicação deste princípio deste princípio em um projeto de software pode ser mensurado, segundo a heurística "depender de abstrações". Nesta heurística é definido as seguintes métricas segundo [4]:
 
-- "Nenhuma variável deve conter uma referência para uma classe concreta."
-- "Nenhuma classe deve derivar de uma classe concreta."
+- "Nenhuma variável deve conter uma referência para uma classe concreta.";
+- "Nenhuma classe deve derivar de uma classe concreta.";
 - "Nenhum método deve sobrescrever um método implementado de qualquer uma de
-suas classes base."
+suas classes base.".
 
-Entretanto, é possivel observar que neste heuristica "tudo realmente depende de abstrações". Entretanto, sabe-se que alguma entidade de código de um projeto estará responsavel de instanciar as classes concretas e os módulos que necessitem dessas instancias dependeram desta entidade. Neste caso, é recomendado que seja usado o padrão de projeto "Factory" que já define um design de software utilizado que respeita o SOLID, e implica em um código robuzto, modularizado e coeso. Também, existem casos de instancias de classe concreta como "string", entretanto classes não volateis não apresentam problema neste sentido para a quebra deste princípio.
+É possível observar que nesta heurística tudo realmente depende de abstrações. Entretanto, sabe-se que alguma entidade de código de um projeto estará responsável por instanciar as classes concretas, e os módulos que necessitem dessas instâncias deverão depender desta entidade. Neste caso, é recomendado que seja usado o padrão de projeto "Factory", que já define um design de software que respeita o SOLID, e implica em um código robusto, modularizado e coeso. Também, existem casos de instâncias de classe concreta não voláteis como "string". Entretanto, classes não voláteis não apresentam problema neste sentido para a quebra deste princípio.
+
+
 # Padrões de Projeto de Software
 
 - Falar dos padrões que o exemplo produzido seguem.
