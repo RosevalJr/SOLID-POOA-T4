@@ -74,7 +74,7 @@ suas classes base.".
 - Falar dos padrões que o exemplo produzido seguem.
 
 Naturalmente, muitas pessoas confundem os termos inversão de dependência, inversão de controle e injeção
-de dependência, dado suas correlações de temas e aplicações. Entretanto, esses termos referem-se a padrões e tecnicas diferentes para atingir certos objetos. 
+de dependência, dado suas correlações de temas e aplicações. Entretanto, esses termos referem-se a padrões e tecnicas diferentes para atingir certos objetos. O termo inversão de dependência refere-se ao ultimo principio do acrônimo SOLID (D). Esse princípio reza que os artefatos de código de um projeto de software devem depender de uma abstração e não de uma implementação. Através deste princípio, implementações criam dependencias (acoplagem), bem mais que uma abstração. Depender de algo que será implementando, sem necessariamente saber como isso será implementado. Dessa forma, o artefato de código que depende de uma abstração desconhece a implementação desta classe abstrata, sendo possibilita a extensão e manutenção deste sistema, sendo que é possivel desacoplar esses artefatos de código até mesmo entre projetos. A injeção de dependência é um padrão de projeto de software utilizado a fim de aplicar e respeita o principio da inversão de dependencia. Essa técnica consiste em passar (injetar) a dependencia (serviço, classe) para o dependente (cliente), dessa forma o cliente não precisa ter conhecimento do que foi injetado, respeitando o princípio de inversão de dependeica. Existem 3 maneiras de se aplicar essa técnica, injeção por método, injeção por 
 
 O que é o principio SOLID? 
 Quem criou e para o que ele foi criado?
