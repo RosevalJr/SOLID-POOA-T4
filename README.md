@@ -84,3 +84,4 @@ https://martinfowler.com/bliki/InversionOfControl.html
 Martin Fowler. Inversion of Control Containers and the Dependency Injection pattern.
 martinfowler.com, 2004.
 https://martinfowler.com/articles/injection.html
+https://www.devmedia.com.br/conheca-os-padroes-de-projeto/957
