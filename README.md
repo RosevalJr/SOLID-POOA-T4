@@ -78,12 +78,21 @@ Naturalmente, muitas pessoas confundem os termos inversão de dependência, inve
 > O estudo realizado para produção deste artigo foi feito, majoriatariamente, em livros e artigos indicados pelo professor. Entretanto, também foram utilizados alguns *White Papers* a fim de obter outras visões sobre os termos apresentados neste artigo.
 
 **[1]** Sommerville, Ian. "Software engineering 9th Edition." ISBN-10 137035152 (2011): 18.
+
 **[2]** http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
+
 **[3]** Robert Martin, Micah Martin, Princípios, Padrões e Práticas Ágeis em C#,  Bookman Editora, 2009 Martin Fowler. Inversion of Control. martinfowler.com, 2005.
+
 **[4]** Martin Fowler. Inversion of Control Containers and the Dependency Injection pattern. martinfowler.com, 2004.
+
 **[5]** https://martinfowler.com/articles/injection.html
+
 **[6]** https://www.devmedia.com.br/conheca-os-padroes-de-projeto/957
+
 **[7]** https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
+
 **[8]** https://www.eduardopires.net.br/2013/04/orientacao-a-objeto-solid/
+
 **[9]** https://www.treinaweb.com.br/blog/introducao-aos-principios-solid
+
 **[10]** https://martinfowler.com/bliki/InversionOfControl.html
