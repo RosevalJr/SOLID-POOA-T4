@@ -71,7 +71,7 @@ suas classes base.".
 
 # Injeção de Dependências, Inversão de Dependência e Inversão de Controle
 
-Naturalmente, muitas pessoas confundem os termos inversão de dependência, inversão de controle e injeção de dependência, dado suas correlações de tema e aplicações. Entretanto, esses termos referem-se a padrões e técnicas diferentes para atingir objetivos interligados. Diante disso, o termo injeção de dependência refere-se a um padrão de projeto, que implica em um design que reduz ou remove a acoplação entre classes. Ao invés dos dependentes de uma classe serem instanciados de maneira estática, ou diretamente, os colaboradores são "injetados" na classe como dependência, sem que essa classe tenha conhecimento da instância que foi injetada (devido a abstração). Essa injeção de dependência, normalmente, é feita de 3 formas diferentes dentro da própria classe, sendo elas a injeção por construtor, injeção por setter e injeção por método. Neste contexto, é possível observar que a aplicação deste de padrão de projeto, implica na concordância com o princípio de inversão de dependência. Esse princípio reza que os artefatos de código de um projeto de software devem depender de uma abstração e não de uma implementação. Através deste princípio, classes implementam dependências através de abstrações, sem necessariamente saber como os dependentes serão implementados. Isso auxilia na produção de projetos de código com alta coesão e baixo acoplamento, facilitando a manutenção e extensão do projeto. Mesmo havendo a possibilidade de aplicação do padrão de projeto de injeção de dependência, dado os 3 métodos citados, é interessante modularizar esse processo, produzindo um artefato de código que o seu único papel é a injeção de dependências. Em sua maioria esses artefatos são chamados de classes “Factory”. Entretanto, também são chamados de repositórios de “inversão de controle “ (IoC), devido a inversão de controle de execução do código, sendo que esses repositórios ficam responsáveis por fornecer instâncias de tipos (injeção de dependências), sem que a classe precise solicitar essas instâncias. Portanto, a inversão de controle está totalmente relacionada à injeção de dependências, sendo designado o papel de injetor de dependências para classes "Factory" ou frameworks, ao invés da própria classe que recebe as dependências.
+Naturalmente, muitas pessoas confundem os termos inversão de dependência, inversão de controle e injeção de dependência, dado suas correlações de tema e aplicações. Entretanto, esses termos referem-se a padrões e técnicas diferentes para atingir objetivos interligados. Diante disso, o termo injeção de dependência refere-se a um padrão de projeto, que implica em um design que reduz ou remove a acoplação entre classes. Ao invés dos dependentes de uma classe serem instanciados de maneira estática, ou diretamente, os colaboradores são "injetados" na classe como dependência, sem que essa classe tenha conhecimento da instância que foi injetada (devido a abstração). Essa injeção de dependência, normalmente, é feita de 3 formas diferentes dentro da própria classe, sendo elas a injeção por construtor, injeção por setter e injeção por método. Neste contexto, é possível observar que a aplicação deste de padrão de projeto, implica na concordância com o princípio de inversão de dependência. Esse princípio reza que os artefatos de código de um projeto de software devem depender de uma abstração e não de uma implementação. Através deste princípio, classes implementam dependências através de abstrações, sem necessariamente saber como os dependentes serão implementados. Isso auxilia na produção de projetos de código com alta coesão e baixo acoplamento, facilitando a manutenção e extensão do projeto. Mesmo havendo a possibilidade de aplicação do padrão de projeto de injeção de dependência, dado os 3 métodos citados, é interessante modularizar esse processo, produzindo um artefato de código que o seu único papel é a injeção de dependências. Em sua maioria esses artefatos são chamados de classes “Factory”. Entretanto, também são chamados de repositórios de “inversão de controle “ (IoC), devido a inversão de controle de execução do código, sendo que esses repositórios ficam responsáveis por fornecer instâncias de tipos (injeção de dependências), sem que a classe precise solicitar essas instâncias [3]. Portanto, a inversão de controle está totalmente relacionada à injeção de dependências, sendo designado o papel de injetor de dependências para classes "Factory" ou frameworks, ao invés da própria classe que recebe as dependências [4].
 
 
 # Referências
@@ -83,16 +83,18 @@ Naturalmente, muitas pessoas confundem os termos inversão de dependência, inve
 
 **[3]** Robert Martin, Micah Martin, Princípios, Padrões e Práticas Ágeis em C#,  Bookman Editora, 2009 Martin Fowler. Inversion of Control. martinfowler.com, 2005.
 
-**[4]** Martin Fowler. Inversion of Control Containers and the Dependency Injection pattern. martinfowler.com, 2004.
+**[4]** Martin Fowler. Inversion of Control. martinfowler.com, 2005.
 
-**[5]** https://martinfowler.com/articles/injection.html
+**[5]** Martin Fowler. Inversion of Control Containers and the Dependency Injection pattern. martinfowler.com, 2004.
 
-**[6]** https://www.devmedia.com.br/conheca-os-padroes-de-projeto/957
+**[6]** https://martinfowler.com/articles/injection.html
 
-**[7]** https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
+**[7]** https://www.devmedia.com.br/conheca-os-padroes-de-projeto/957
 
-**[8]** https://www.eduardopires.net.br/2013/04/orientacao-a-objeto-solid/
+**[8]** https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
 
-**[9]** https://www.treinaweb.com.br/blog/introducao-aos-principios-solid
+**[9]** https://www.eduardopires.net.br/2013/04/orientacao-a-objeto-solid/
 
-**[10]** https://martinfowler.com/bliki/InversionOfControl.html
+**[10]** https://www.treinaweb.com.br/blog/introducao-aos-principios-solid
+
+**[11]** https://martinfowler.com/bliki/InversionOfControl.html
