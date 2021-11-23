@@ -73,6 +73,37 @@ suas classes base.".
 
 Naturalmente, muitas pessoas confundem os termos inversão de dependência, inversão de controle e injeção de dependência, dado suas correlações de tema e aplicações. Entretanto, esses termos referem-se a padrões e técnicas diferentes para atingir objetivos interligados. Diante disso, o termo injeção de dependência refere-se a um padrão de projeto, que implica em um design que reduz ou remove a acoplação entre classes. Ao invés dos dependentes de uma classe serem instanciados de maneira estática, ou diretamente, os colaboradores são "injetados" na classe como dependência, sem que essa classe tenha conhecimento da instância que foi injetada (devido a abstração). Essa injeção de dependência, normalmente, é feita de 3 formas diferentes dentro da própria classe, sendo elas a injeção por construtor, injeção por setter e injeção por método. Neste contexto, é possível observar que a aplicação deste de padrão de projeto, implica na concordância com o princípio de inversão de dependência. Esse princípio reza que os artefatos de código de um projeto de software devem depender de uma abstração e não de uma implementação. Através deste princípio, classes implementam dependências através de abstrações, sem necessariamente saber como os dependentes serão implementados. Isso auxilia na produção de projetos de código com alta coesão e baixo acoplamento, facilitando a manutenção e extensão do projeto. Mesmo havendo a possibilidade de aplicação do padrão de projeto de injeção de dependência, dado os 3 métodos citados, é interessante modularizar esse processo, produzindo um artefato de código que o seu único papel é a injeção de dependências. Em sua maioria esses artefatos são chamados de classes “Factory”. Entretanto, também são chamados de repositórios de “inversão de controle “ (IoC), devido a inversão de controle de execução do código, sendo que esses repositórios ficam responsáveis por fornecer instâncias de tipos (injeção de dependências), sem que a classe precise solicitar essas instâncias [4]. Portanto, a inversão de controle está totalmente relacionada à injeção de dependências, sendo designado o papel de injetor de dependências para classes "Factory" ou frameworks, ao invés da própria classe que recebe as dependências [5].
 
+# Ferramenta SolidMvc
+
+Para demonstrar a aplicação de todos os princípios do acrônimo SOLID, foi produzido um projeto maven com arquitetura MVC, utilizando os padrões de projeto DAO e Strategy. Essa ferramenta produzida foi nomeada de SolidMvc, e possibilita a extensão de cada um dos múdlos do MVC, adicionando novas funcionalidades à ferramenta sem alterar código já implementado. As classes implementadas no exemplo apresentado do projeto, realiza o CRUD de clientes em um banco de dados mySqul, apresentando resultados e requisições no terminal, e permitindo apenas 2 comandos. Como pode ser observado na Figura 1, foi produzido um diagrama com a Unified Modeling Language (UML) com relações e modularização produzida.
+
+![Figura 1](https://github.com/RosevalJr/SOLID-POOA-T4/blob/main/imgUML/umlSolidMvc.jpeg)
+<div align="center">
+  <b>Figura 1: Diagrama UML da ferramenta SolidMvc, apresentando seus módulos, classes e relacionamentos.</b>
+</div>
+
+Na Figura 1 é possível observar que o projeto foi divido em módulos **"Model"**, **"Vision"** e **"Controller"**, aplicando os princípios SOLID a fim de possibilitar que estes módulos sejam independentes, possibilitando sua aplicação em diferentes contextos. Dessa forma, através da abstração todos os módulos podem ser utilizados em outros projetos em contextos diferentes, possivelmente, até mesmo como um framework para outro projeto.
+
+## Por Que Este Projeto Respeita os Princípios SOLID?
+
+> [S] Falar para que cada classe dentro do projeto serve.
+
+> [O] Possivel extender sem mudanças em código já implementado, falar como pode ser feita outra extensão.
+
+> [L] Toda classe especificada pode ser substituida por sua base.
+
+> [I] Todas as classes implementam apenas aquilo que irão utilizar.
+
+> [D] As classes que dependem de outros módulos, não dependem de implementações, mas sim de abstrações.
+
+## Como Executar o Projeto?
+
+As funcionalidades implementadas da ferramenta podem ser testadas, através da execução da classe ``Main``. Nesta classe, são exemplicadas a execução de 2 extensões possiveis da ferramenta. Entretanto, é necessário a instação do **MySql Server** e sua devida configuração para a execução de todas as funcionalidades do projeto. Dessa forma, o autor utilizou o tutorial disponibilizado em [6], que demonstra um passo a passo para instalação e configuração do server mySql. Importante destacar que, o server deve possuir o acesso ao usuário ``root`` através da senha ``root``. Além disso, previamente a execução da ferramenta é necessário a execução do script de inicialização do banco de dados, que pode ser encontrado na pasta ``scriptBD``.
+
+
+# Conclusão
+
+Concluir com aquele pensamento de aprendizado. Falar o quão importante é o estudo dos princípios SOLID e ainda mais sua aplicação, sendo que o estudo de casos e aplicações de padrões de projeto podem ajudar na habituação de aplicação destes projetos. Mesmo durante a máteria de POOA o autor deste artigo já percebeu sua evolução na aplicação destes pricípios e, assim, aprimorando sua habilidade de projeão de artefatos de código com alta coesão e baixo acoplamento, auxiliando em possíveis manutenções e extensões destes artefatos. 
 
 # Referências
 > O estudo realizado para produção deste artigo foi feito, majoriatariamente, em livros e artigos indicados pelo professor. Entretanto, também foram utilizados alguns *White Papers* a fim de obter outras visões sobre os termos apresentados neste artigo.
