@@ -129,3 +129,8 @@ Concluir com aquele pensamento de aprendizado. Falar o quão importante é o est
 **[10]** https://www.treinaweb.com.br/blog/introducao-aos-principios-solid
 
 **[11]** https://martinfowler.com/bliki/InversionOfControl.html
+
+Tudo esta complementamente desconectado mas o controlador parece estar errado;
+ -- Ele obrigatoriamente precisa saber alguma coisa do view e controller para poder aplicar as regras de negócio.
+Precisa realizar a implementação de outra extensão do sistema?
+Duvida no bufferedwirtter e reader...
