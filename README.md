@@ -82,9 +82,11 @@ Para demonstrar a aplicação de todos os princípios do acrônimo SOLID, foi pr
   <b>Figura 1: Diagrama UML da ferramenta SolidMvc, apresentando seus módulos, classes e relacionamentos.</b>
 </div>
 
-Na Figura 1 é possível observar que o projeto foi divido em módulos ``Model``, ``Vies`` e ``Controller``, aplicando os princípios SOLID a fim de possibilitar que estes módulos sejam independentes, possibilitando sua aplicação em diferentes contextos. Dessa forma, através da abstração todos os módulos podem ser utilizados em outros projetos em contextos diferentes, possivelmente, até mesmo como um framework para outro projeto.
+Na Figura 1 é possível observar que o projeto foi divido em módulos ``Model``, ``View`` e ``Controller``, aplicando os princípios SOLID a fim de possibilitar que estes módulos sejam independentes, possibilitando sua aplicação em diferentes contextos. Dessa forma, através da abstração todos os módulos podem ser utilizados em outros projetos em contextos diferentes, possivelmente, até mesmo como um framework para outro projeto.
 
 ## Por Que Este Projeto Respeita os Princípios SOLID?
+
+Esse projeto respeita todos os principios SOLID, tendo em vista que foi produzido seguindo o padrão arquitetural "Model View Controller" (MVC), agrupando as principáis funcionalidades do programa em grupos de artefatos de código com funcionalidades ligadas a execução de um objetivo. Além disso, foi aplicado os padrões de projeto de Injeção de Dependência com o ``Spring Framweork``a fim de reduzir ao maximo o acoplamento entre classes, deixando as classes dependentes apenas de abstrações e não implementações. Também, foi aplicado o padrão de projeto "Data Acess Object" (DAO) a fim de modularizar as responsabilidades de encapsulamento dos dados do módulo ``Model`` e acesso e conexão ao banco de dados. Por fim, foi aplicado o padrõa de projeto "Strategy" nos artefatos de código dos módulos ``Controller``, ``Model`` e ``View`` a fim de possibilitar a extemsão dos módulos sem resultar em alterações em código  já implementado, sendo que este padrão de projeto fornece uma classe interface com um método Strategy, que pode ser implementando adequado a extensão desejada.
 
 > [S] Falar para que cada classe dentro do projeto serve.
 
