@@ -1,0 +1,8 @@
+br/ufscar/dc/pooa/controller/ControllerCrud.class
+br/ufscar/dc/pooa/view/ViewTerminal.class
+br/ufscar/dc/pooa/model/IModel.class
+br/ufscar/dc/pooa/view/IView.class
+br/ufscar/dc/pooa/model/ModelClientDAO.class
+br/ufscar/dc/pooa/controller/IController.class
+br/ufscar/dc/pooa/solidmvc/Main.class
+br/ufscar/dc/pooa/model/Client.class

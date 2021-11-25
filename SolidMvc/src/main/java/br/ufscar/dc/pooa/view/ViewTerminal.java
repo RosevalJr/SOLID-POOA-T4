@@ -1,35 +1,27 @@
-// Em producao.
 package br.ufscar.dc.pooa.view;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.springframework.stereotype.Component;
 
 // Classe responsável por por implementar os métodos de IView a fim de possibilitar
 // a comunicacao com usuario por meio de um Terminal.
+@Component
 public class ViewTerminal implements IView<String>{
-
-    /*// Enter data using BufferReader
-        BufferedReader reader = new BufferedReader(
-            new InputStreamReader(System.in));
- 
-        // Reading data using readLine
-        String name = reader.readLine();
- 
-        // Printing the read line
-        System.out.println(name);*/
     
     BufferedReader buffIn;
-    //BufferedWriter buffOut;
+    BufferedWriter buffOut; 
     
-    // Inicilizar o buffer de leitura.
-    // Injecao de dependencia por construtor.
-    ViewTerminal(BufferedReader buffIn){
-        this.buffIn = buffIn; //= new BufferedReader(new InputStreamReader(System.in));
-        // buffOut
+    // Inicializar o buffer de leitura.
+    // Inicializa o buffer de escrita.
+    public ViewTerminal(){
+        this.buffIn = new BufferedReader(new InputStreamReader(System.in));
+        this.buffOut = new BufferedWriter(new OutputStreamWriter(System.out));
     }
     
     // Recebe a mensagem do usuario por meio do buffer de leitura do terminal.
@@ -38,14 +30,20 @@ public class ViewTerminal implements IView<String>{
         try {
             return buffIn.readLine();
         } catch (IOException ex) {
+            Logger.getLogger(ViewTerminal.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
     }
 
-    // Envia a mensagem ao usuario pelo terminal.
+    // Envia a mensagem ao usuario pelo terminal atraves do buffer de escrita.
     @Override
     public void sendMessageUser(String msg) {
-        System.out.println(msg);
+        try {
+            buffOut.write(msg);
+            buffOut.flush();
+        } catch (IOException ex) {
+            Logger.getLogger(ViewTerminal.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }

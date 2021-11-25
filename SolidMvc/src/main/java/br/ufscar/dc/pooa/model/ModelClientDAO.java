@@ -6,10 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import org.springframework.stereotype.Component;
 
-
-// Classe DAO responsavel por realizar o acesso aos dados de client no banco de
-// dados mysql, possibilitando o CRUD.
+// Classe DAO que implementa a interface IModel. Essa classe DAO é responsavel 
+// por realizar o acesso aos dados de client no banco de dados mysql, 
+// possibilitando o CRUD.
+@Component
 public class ModelClientDAO implements IModel<Client> {
     
     public ModelClientDAO(){
@@ -23,7 +25,7 @@ public class ModelClientDAO implements IModel<Client> {
 
     // Metodo privado para retornar a conexao com o banco.
     private Connection getConnection() throws SQLException{
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/CLIENT", "root", "root");
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/CLIENT", "solid", "123abcABC!@#");
     }
         
     // Insercao de objeto no modelo.
@@ -58,7 +60,7 @@ public class ModelClientDAO implements IModel<Client> {
         String cpf = null, nome = null, email = null;
 
         try {
-                Connection conn = this.getConnection(); // Conext
+                Connection conn = this.getConnection(); // Conecta.
                 PreparedStatement statement = conn.prepareStatement(sql);
 
                 statement.setLong(1, clientID.getId()); // Seta ID de busca.

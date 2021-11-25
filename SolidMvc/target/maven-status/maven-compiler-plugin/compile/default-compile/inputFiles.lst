@@ -1,0 +1,8 @@
+/home/roseval/NetBeansProjects/SolidMvc/src/main/java/br/ufscar/dc/pooa/view/IView.java
+/home/roseval/NetBeansProjects/SolidMvc/src/main/java/br/ufscar/dc/pooa/controller/IController.java
+/home/roseval/NetBeansProjects/SolidMvc/src/main/java/br/ufscar/dc/pooa/model/ModelClientDAO.java
+/home/roseval/NetBeansProjects/SolidMvc/src/main/java/br/ufscar/dc/pooa/model/IModel.java
+/home/roseval/NetBeansProjects/SolidMvc/src/main/java/br/ufscar/dc/pooa/view/ViewTerminal.java
+/home/roseval/NetBeansProjects/SolidMvc/src/main/java/br/ufscar/dc/pooa/model/Client.java
+/home/roseval/NetBeansProjects/SolidMvc/src/main/java/br/ufscar/dc/pooa/solidmvc/Main.java
+/home/roseval/NetBeansProjects/SolidMvc/src/main/java/br/ufscar/dc/pooa/controller/ControllerCrud.java

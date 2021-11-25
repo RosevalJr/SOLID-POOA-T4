@@ -2,6 +2,8 @@ package br.ufscar.dc.pooa.model;
 
 // Classe interface que serve como modelo para a producao de objetos utilizados
 // como "model". A implementação desta classe utiliza o padrao de projeto DAO.
+// OBS: Utiliza generic type para possibilitar o controle de diversos tipos de 
+// dados dependendo da implementacao feita.
 public interface IModel <Element>{
     
     // Insercao de elemento no modelo.
