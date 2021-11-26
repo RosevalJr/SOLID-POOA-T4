@@ -102,10 +102,6 @@ Por fim, a classe ``Main`` está de acordo com os princípios SOLID, apresentand
 As funcionalidades implementadas da ferramenta podem ser testadas, através da execução do comando `` $ maven exec:java
 `` na pasta raiz do projeto. Entretanto, é necessário a instação do **MySql Server** e sua devida configuração para a execução de todas as funcionalidades do projeto. Dessa forma, o autor utilizou o tutorial disponibilizado em [6], que demonstra um passo a passo para instalação e configuração do server mySql. Além disso, deve ser feita a execução do script de inicialização do banco de dados, que pode ser encontrado na pasta ``scriptBD``. Importante destacar que, deve ser possivel acessar a tabela ``CLIENT`` com o usuário ``solid@localhost`` através da senha ``123abcABC!@#``. A criação deste usuário e senha pode ser feita através da execução dos comandos ``CREATE USER 'solid'@'localhost' IDENTIFIED BY '123abcABC!@#';`` e ``GRANT ALL PRIVILEGES ON CLIENT.* TO 'solid'@'localhost'``. 
 
-# Conclusão
-
-Concluir com aquele pensamento de aprendizado. Falar o quão importante é o estudo dos princípios SOLID e ainda mais sua aplicação, sendo que o estudo de casos e aplicações de padrões de projeto podem ajudar na habituação de aplicação destes projetos. Mesmo durante a máteria de POOA o autor deste artigo já percebeu sua evolução na aplicação destes pricípios e, assim, aprimorando sua habilidade de projeão de artefatos de código com alta coesão e baixo acoplamento, auxiliando em possíveis manutenções e extensões destes artefatos. 
-
 # Referências
 > O estudo realizado para produção deste artigo foi feito, majoriatariamente, em livros e artigos indicados pelo professor. Entretanto, também foram utilizados alguns *White Papers* a fim de obter outras visões sobre os termos apresentados neste artigo.
 
