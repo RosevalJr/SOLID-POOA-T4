@@ -75,14 +75,14 @@ Naturalmente, muitas pessoas confundem os termos inversão de dependência, inve
 
 # Ferramenta SolidMvc
 
-Para demonstrar a aplicação de todos os princípios do acrônimo SOLID, foi produzido um projeto maven com arquitetura MVC, utilizando os padrões de projeto DAO e Strategy. Essa ferramenta produzida foi nomeada de SolidMvc, e possibilita a extensão de cada um dos módulos do MVC, adicionando novas funcionalidades à ferramenta sem alterar código já implementado. As classes implementadas no exemplo apresentado do projeto, realiza o CRUD de clientes em um banco de dados mySql, apresentando resultados e requisições no terminal. Como pode ser observado na Figura 1, foi produzido um diagrama com a Unified Modeling Language (UML) com relações e modularizações produzidas.
+Para demonstrar a aplicação de todos os princípios do acrônimo SOLID, foi produzido um projeto maven com arquitetura MVC, utilizando os padrões de projeto DAO e Strategy. Essa ferramenta produzida foi nomeada de SolidMvc, e possibilita a extensão de cada um dos módulos do MVC, adicionando novas funcionalidades à ferramenta sem alterar código já implementado. A implementação feita no exemplo apresentado do projeto, realiza o CRUD de clientes em um banco de dados mySql, apresentando resultados e requisições no terminal. Como pode ser observado na Figura 1, foi produzido um diagrama com a Unified Modeling Language (UML) com relações e modularizações produzidas.
 
 ![Figura 1](https://github.com/RosevalJr/SOLID-POOA-T4/blob/main/imgUML/umlSolidMvc.jpeg)
 <div align="center">
   <b>Figura 1: Diagrama UML da ferramenta SolidMvc, apresentando seus módulos, classes e relacionamentos.</b>
 </div>
 
-Na Figura 1 é possível observar que o projeto foi divido em módulos ``Model``, ``View`` e ``Controller``, aplicando os princípios SOLID a fim de possibilitar que estes módulos sejam independentes, possibilitando sua aplicação em diferentes contextos. Dessa forma, através da abstração todos os módulos podem ser utilizados em outros projetos em contextos diferentes, possivelmente, até mesmo como um framework para outro projeto.
+Na Figura 1 é possível observar que o projeto foi divido em módulos ``Model``, ``View`` e ``Controller``, aplicando os princípios SOLID a fim de possibilitar que estes módulos sejam independentes, aplicando-os em diferentes contextos. Dessa forma, através da abstração todos os módulos podem ser utilizados em outros projetos em contextos diferentes, possivelmente, até mesmo como um framework para outro projeto.
 
 ## Por Que Este Projeto Respeita os Princípios SOLID?
 
