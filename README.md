@@ -100,9 +100,8 @@ Por fim, a classe ``Main`` está de acordo com os princípios SOLID, apresentand
 ## Como Executar o Projeto SolidMvc?
 
 As funcionalidades implementadas da ferramenta podem ser testadas, através da execução do comando `` $ maven exec:java
-`` na pasta raiz do projeto. Entretanto, é necessário a instação do **MySql Server** e sua devida configuração para a execução de todas as funcionalidades do projeto. Dessa forma, o autor utilizou o tutorial disponibilizado em [6], que demonstra um passo a passo para instalação e configuração do server mySql. Importante destacar que, o server deve possuir o acesso ao usuário ``root`` através da senha ``root``. Além disso, deve ser feita a execução do script de inicialização do banco de dados, que pode ser encontrado na pasta ``scriptBD``.
+`` na pasta raiz do projeto. Entretanto, é necessário a instação do **MySql Server** e sua devida configuração para a execução de todas as funcionalidades do projeto. Dessa forma, o autor utilizou o tutorial disponibilizado em [6], que demonstra um passo a passo para instalação e configuração do server mySql. Além disso, deve ser feita a execução do script de inicialização do banco de dados, que pode ser encontrado na pasta ``scriptBD``. Importante destacar que, deve ser possivel acessar a tabela ``CLIENT`` com o usuário ``solid@localhost`` através da senha ``123abcABC!@#``. A criação deste usuário e senha pode ser feita através da execução dos comandos ``CREATE USER 'solid'@'localhost' IDENTIFIED BY '123abcABC!@#';`` e ``GRANT ALL PRIVILEGES ON CLIENT.* TO 'solid'@'localhost'``. 
 
-"jdbc:mysql://localhost:3306/CLIENT", "solid", "123abcABC!@#"
 # Conclusão
 
 Concluir com aquele pensamento de aprendizado. Falar o quão importante é o estudo dos princípios SOLID e ainda mais sua aplicação, sendo que o estudo de casos e aplicações de padrões de projeto podem ajudar na habituação de aplicação destes projetos. Mesmo durante a máteria de POOA o autor deste artigo já percebeu sua evolução na aplicação destes pricípios e, assim, aprimorando sua habilidade de projeão de artefatos de código com alta coesão e baixo acoplamento, auxiliando em possíveis manutenções e extensões destes artefatos. 
@@ -131,8 +130,3 @@ Concluir com aquele pensamento de aprendizado. Falar o quão importante é o est
 **[10]** https://www.treinaweb.com.br/blog/introducao-aos-principios-solid
 
 **[11]** https://martinfowler.com/bliki/InversionOfControl.html
-
-Tudo esta complementamente desconectado mas o controlador parece estar errado;
- -- Ele obrigatoriamente precisa saber alguma coisa do view e controller para poder aplicar as regras de negócio.
-Precisa realizar a implementação de outra extensão do sistema?
-Duvida no bufferedwirtter e reader... -> Entretanto, classes não voláteis não apresentam problema neste sentido para a quebra deste princípio.
