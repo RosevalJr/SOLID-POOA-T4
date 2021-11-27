@@ -51,7 +51,7 @@ public class ModelClientDAO implements IModel<Client> {
         }
     }
         
-    // Leitora de um objeto armazenado no modelo.
+    // Leitura de um objeto armazenado no modelo.
     // Necessario passar um objeto cliente criado com o ID SETADO.
     @Override
     public Client read(Client clientID){
@@ -106,9 +106,10 @@ public class ModelClientDAO implements IModel<Client> {
                 throw new RuntimeException(e);
         }
     }
+    
     // Exclusão de objeto no modelo.
-    // Exclusão é feita acessando o valor do campo id do objeto de entrada. 
-    // E entao definindo uma query DELETE do campo com o id passado.
+    // Exclusão é feita acessando o valor do campo id do objeto de entrada, 
+    // e entao definindo uma query DELETE do campo com o id passado.
     @Override
     public void delete(Client client){
         // String da query a ser realizada no banco.

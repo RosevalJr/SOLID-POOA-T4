@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.springframework.stereotype.Component;
 
-// Classe responsável por por implementar os métodos de IView a fim de possibilitar
+// Classe responsavel por implementar os metodos de IView a fim de possibilitar
 // a comunicacao com usuario por meio de um Terminal.
 @Component
 public class ViewTerminal implements IView<String>{

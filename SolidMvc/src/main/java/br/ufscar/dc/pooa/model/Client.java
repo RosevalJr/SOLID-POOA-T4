@@ -1,7 +1,7 @@
 package br.ufscar.dc.pooa.model;
 
 // Classe domain resposavel por encapsulamento dos valores de Client, utilizada 
-// como definicao do tipo generico da implementacao de IModel por ClientDAO.
+// como definicao do tipo generico da implementacao de IModel por ModelClientDAO.
 public class Client {
     private int id;
     private String cpf;

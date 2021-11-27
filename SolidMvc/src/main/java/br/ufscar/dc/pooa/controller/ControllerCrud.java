@@ -11,14 +11,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class ControllerCrud implements IController{
 
-    // Implementacao do modulo View.
+    // Modulo View.
     @Autowired
     IView view;
-    // Implementacao do modulo model.
+    // Modulo model.
     @Autowired
     IModel model;
     
-    // Implementacao do metodo strategy de CRUD de objetos.
+    // Implementacao do metodo strategy de CRUD de clients.
     @Override
     public void runStrategyModel() {
         
@@ -38,7 +38,7 @@ public class ControllerCrud implements IController{
             // Create.
             if(comand.equals("C"))
                 comandC();
-            else if(comand.equals("R")) // Create.
+            else if(comand.equals("R")) // Read.
                     comandR();
             else if(comand.equals("U")) // Update.
                     comandU();
@@ -63,6 +63,7 @@ public class ControllerCrud implements IController{
     private void comandC(){
         Client client = new Client();
         
+        // Recebe as entradas do usuario pelo view.
         view.sendMessageUser("Inserção de cliente!\n");
         view.sendMessageUser("> CPF: ");
         client.setCpf((String)view.getMessageUser());
@@ -91,6 +92,7 @@ public class ControllerCrud implements IController{
         // Solicita ao model o client com o respectivo id passado.
         Client receivedClient = (Client) model.read(client);
         
+        // Envia ao usuario as informacoes do client.
         view.sendMessageUser("> ID: " + String.valueOf(receivedClient.getId()) + "\n");
         view.sendMessageUser("> CPF: " + receivedClient.getCpf() + "\n");
         view.sendMessageUser("> NOME: " + receivedClient.getNome() + "\n");
@@ -131,7 +133,7 @@ public class ControllerCrud implements IController{
         String id = (String) view.getMessageUser();
         client.setId(Integer.parseInt(id));
         
-        // Solicita ao model a remoção do cliente do respectivo id passado.
+        // Solicita ao model a exclusão do cliente do respectivo id passado.
         model.delete(client);
         
         view.sendMessageUser("> Exclusão concluida! \n"
