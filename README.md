@@ -100,10 +100,10 @@ Por fim, a classe ``Main`` está de acordo com os princípios SOLID, apresentand
 ## Como Executar o Projeto SolidMvc?
 
 As funcionalidades implementadas da ferramenta podem ser testadas, através da execução do comando `` $ maven exec:java
-`` na pasta raiz do projeto. Entretanto, é necessário a instação do **MySql Server** e sua devida configuração para a execução de todas as funcionalidades do projeto. Dessa forma, o autor utilizou o tutorial disponibilizado em [6], que demonstra um passo a passo para instalação e configuração do server mySql. Além disso, deve ser feita a execução do script de inicialização do banco de dados, que pode ser encontrado na pasta ``scriptBD``. Importante destacar que, deve ser possivel acessar a tabela ``CLIENT`` com o usuário ``solid@localhost`` através da senha ``123abcABC!@#``. A criação deste usuário e senha pode ser feita através da execução dos comandos ``CREATE USER 'solid'@'localhost' IDENTIFIED BY '123abcABC!@#';`` e ``GRANT ALL PRIVILEGES ON CLIENT.* TO 'solid'@'localhost'``. 
+`` na pasta raiz do projeto. Entretanto, é necessário a instalação do **MySql Server** e sua devida configuração para a execução de todas as funcionalidades do projeto. Sendo assim, o autor utilizou o tutorial disponibilizado em [6], que demonstra um passo a passo para instalação e configuração do server mySql. Além disso, deve ser feita a execução do script de inicialização do banco de dados, que pode ser encontrado na pasta ``scriptBD``. Importante destacar que, deve ser possível acessar a tabela ``CLIENT`` com o usuário ``solid@localhost`` através da senha ``123abcABC!@#``. A criação deste usuário e senha pode ser feita através da execução dos comandos ``CREATE USER 'solid'@'localhost' IDENTIFIED BY '123abcABC!@#';`` e ``GRANT ALL PRIVILEGES ON CLIENT.* TO 'solid'@'localhost';``.
 
 # Referências
-> O estudo realizado para produção deste artigo foi feito, majoriatariamente, em livros e artigos indicados pelo professor. Entretanto, também foram utilizados alguns *White Papers* a fim de obter outras visões sobre os termos apresentados neste artigo.
+> O estudo realizado para produção deste artigo foi feito, majoritariamente, em livros e artigos indicados pelo professor. Entretanto, também foram utilizados alguns *White Papers* a fim de obter outras visões sobre os termos apresentados neste artigo.
 
 **[1]** Sommerville, Ian. "Software engineering 9th Edition." ISBN-10 137035152 (2011): 18.
 
